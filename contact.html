@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Some Good Food</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <header>
+        <h1 id="header">Some Good Food</h1>
+        <div class="main-nav">
+            <a href="homepage.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <body>
+        <form id="main-form">
+            <fieldset>
+                <label>Name: <input type="text" name="name" required="required"></label>
+                <label>Email: <input type="email" name="email" required="required"></label>
+                <label>Phone: <input type="tel" name="phone" required="required"></label>
+                <label>Reason for Inquiry:
+                    <select name="inquiry">
+                        <option name="catering" selected="selected">Catering</option>
+                        <option name="private">Private Party</option>
+                        <option name="feedback">Feddback</option>
+                        <option name="other">Other</option>
+                    </select>
+                </label>
+                <label>Additional Information:
+                    <textarea name="comments" cols="20" rows="5">Enter Information...</textarea>
+                </label>
+                <label>
+                    Have you been to the restaurant?
+                    <input type="radio" name="no" value="no" checked="checked" />
+                    No
+                    <input type="radio" name="yes" value="yes" />
+                    Yes
+                </label>
+                <label>
+                    Best days to contact you:
+                    <input type="checkbox" name="M">
+                    M
+                    <input type="checkbox" name="T">
+                    T
+                    <input type="checkbox" name="W">
+                    W
+                    <input type="checkbox" name="Th">
+                    Th
+                    <input type="checkbox" name="F">
+                    F
+                </label>
+                <input type="submit" name="request" value="Send Request" />
+            </fieldset>
+        </form>
+
+
+        <script src="" async defer></script>
+    </body>
+    <footer>
+        <div id="footer">
+            <p>1111 Best To Eat Dr Louisville, Ky 40299</p>
+            <a href="tel:5028888888">502-888-8888</a>
+        </div>
+    </footer>
+</html>
