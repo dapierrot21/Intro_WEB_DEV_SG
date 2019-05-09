@@ -1,0 +1,52 @@
+/* Basic Styles */
+a {
+  color: black;  
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+#header-title {
+    font-family: 'Caesar Dressing', cursive;
+}
+
+#menu h2 {
+    font-size: 1.5em;
+}
+
+#menu {
+    width: 75%;
+    height: 75%;
+    background-color: #b3c6ff;
+}
+
+#homepage-content {
+    background-color: #99e6e6;
+}
+
+input:required {
+    font-weight: bold;
+}
