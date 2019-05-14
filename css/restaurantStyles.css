@@ -1,10 +1,6 @@
 /* Basic Styles */
-a {
-  color: black;  
-}
-
-a:link {
-    color: red;
+ a {
+  color: black;
 }
 
 a:visited {
@@ -21,7 +17,6 @@ a:active {
 
 .header {
     width: 100%;
-    text-align: center;
 }
 
 .footer {
