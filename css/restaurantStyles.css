@@ -1,13 +1,15 @@
 /* Basic Styles */
- a {
-  color: black;
+
+a {
+  color: green;
   margin: 0 15px;
+  font-family: 'Anton', sans-serif;
 }
 
 a:visited {
-    color: green;
+    color: white;
 }
-
+ 
 a:hover {
     font-weight: bold;
 }
@@ -16,34 +18,63 @@ a:active {
     text-decoration: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-weight: bolder;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+/* HEADER STYLES */
 .header {
     width: 100%;
+    background-color: #1557c1;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
-}
 
 #header-title {
-    font-family: 'Caesar Dressing', cursive;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-#menu h2 {
-    font-size: 1.5em;
+/* FOOTER STYLES */
+
+.footer {
+    background-color: #1557c1;
+    flex: 0 0 50px;
+    margin-top: auto;
+    border: 2px solid #000;
 }
 
-#menu {
-    width: 75%;
-    height: 75%;
-    background-color: #b3c6ff;
-}
 
+/* HOMEPAGE STYLES */
 .homepage-content {
     background-color: #99e6e6;
 }
 
+/* FORM STYLES */
+
 input:required {
     font-weight: bold;
 }
+
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+
+}
+
