@@ -3,17 +3,65 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Some Good Food</title>
+            <title>Hussle Burgers</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <link rel="stylesheet" href="css/restaurantStyles.css">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+            <style>           
+                .menu {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    background-color: #99e6e6;
+                }
+
+                .item {
+                    flex: 0 0 33.333333%;
+                }
+
+                .drinks table {
+                    width: 100%;
+                    height: 45%;
+                }
+
+                .gray {
+                    background-color: lightgray;
+                }
+
+                th {
+                    text-align: center;
+                    font-size: 1.9em;
+                    font-display: 'Anton', sans-serif;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+
+                td {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    font-display: 'Anton', sans-serif;
+                    padding-left: 9px;
+                }
+
+                @media (max-width: 767.98px) {
+                    .menu {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            </style>
         </head>
         <header class="header">
-        <h1 id="header-title">Some Good Food</h1>
+        <h1 id="header-title">Hussle Burgers</h1>
         <div class="main-nav">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="homepage.html">Home</a></li>
                     <li class="nav-item"><a href="menu.html">Menu</a></li>
@@ -23,93 +71,95 @@
         </div>
     </header>
     <body>
-    <div></div>
-        <div id="menu">
-            <ul>
-                <h2><strong>Burger and Fries</strong></h2>
-                <p>An American Classic!</p>
-                <p>Your choice - with or without cheese.
-                   Pickle, onion, tomato, and lettuce.
-                   Served with our famous thick cut French fries!
-                </p>
-                <p><b>$7.95</b></p>
-
-                <h2><strong>Hot Dog and Chips</strong></h2>
-                <p>A Summer Classic!</p>
-                <p>Your choice - white or wheat bun.
-                   Relish, mustard, and kethcup.
-                   Served with our house-made chips!
-                </p>
-                <p><b>$7.95</b></p>
-
-                <h2><strong>Italian Sausage and Peppers</strong></h2>
-                <p>An All-Time Favorite.</p>
-                <p>Your choice - mid or spicy Cole Slaw.
-                   Served with garlic mashers.
-                </p>
-                <p><b>$10.95</b></p>
-
-                <h2><strong>Tenderloin Sandwich and Chips</strong></h2>
-                <p>Really Hits the Spot!</p>
-                <p>Plain or Sesame Seed Bun.
-                   Pickle, onion, tomato, and lettuce.
-                   Served with our house-made chips.
-                </p>
-                <p><b>$8.95</b></p>
-
-                <h2><strong>House Salad</strong></h2>
-                <p>On the Lighter Side</p>
-                <p>Your choice - with or without cheese.
-                   Iceberg lettuce, tomatoes, peppers.
-                   Thousand Island or Ranch.
-                   Dressing Served with dinner roll.
-                </p>
-                <p><b>$6.95</b></p>
-
-                <h2><strong>Brisket Sandwich and Fries</strong></h2>
-                <p>A Taste of Texas!</p>
-                <p>Smoked Brisket on thick-cut.
-                        Texas Toast
-                        Cole Slaw
-                   Served with our famous thick-cut
-                        french fries.      
-                </p>
-                <p><b>$7.95</b></p>
-            </ul>
+        <div class="menu">
+                <div class="item">                  
+                    <h2><strong>Burger and Fries</strong></h2>
+                    <p>An American Classic!</p>
+                    <p>Your choice - with or without cheese.</br>
+                    Pickle, onion, tomato, and lettuce.<br/>
+                    Served with our famous thick cut French fries!
+                    </p>
+                    <p><b>$7.95</b></p>
+                </div>
+                <div class="item">
+                    <h2><strong>Hot Dog and Chips</strong></h2>
+                    <p>A Summer Classic!</p>
+                    <p>Your choice - white or wheat bun.<br/>
+                    Relish, mustard, and kethcup.<br/>
+                    Served with our house-made chips!
+                    </p>
+                    <p><b>$7.95</b></p>
+                </div>
+                <div class="item">
+                    <h2><strong>Italian Sausage and Peppers</strong></h2>
+                    <p>An All-Time Favorite.</p>
+                    <p>Your choice - mid or spicy Cole Slaw.<br/>
+                    Served with garlic mashers.
+                    </p>
+                    <p><b>$10.95</b></p>
+                </div>
+                <div class="item">
+                    <h2><strong>Tenderloin Sandwich and Chips</strong></h2>
+                    <p>Really Hits the Spot!</p>
+                    <p>Plain or Sesame Seed Bun.<br/>
+                    Pickle, onion, tomato, and lettuce.<br/>
+                    Served with our house-made chips.
+                    </p>
+                    <p><b>$8.95</b></p>
+                </div>
+                <div class="item">
+                    <h2><strong>House Salad</strong></h2>
+                    <p>On the Lighter Side</p>
+                    <p>Your choice - with or without cheese.<br/>
+                    Iceberg lettuce, tomatoes, peppers.<br/>
+                    Thousand Island or Ranch.<br>
+                    Dressing Served with dinner roll.
+                    </p>
+                    <p><b>$6.95</b></p>      
+                </div>
+                <div class="item">
+                    <h2><strong>Brisket Sandwich and Fries</strong></h2>
+                    <p>A Taste of Texas!</p>
+                    <p>Smoked Brisket on thick-cut.<br/>
+                    Texas Toast<br/>
+                    Cole Slaw<br/>
+                    Served with our famous thick-cut<br/>
+                    french fries.      
+                    </p>
+                    <p><b>$7.95</b></p>
+                </div>
         </div>
-        <div>
-            <table style="width:75%; border: 1px solid #000">
-                <th>Beverages</th>
-                <tr style="background-color:#b3c6ff;">
-                    <td style="height: 50px;">Root Bear</td>
-                    <td style="height: 50px;">$3.00</td>
-                </tr>
-                <tr>
-                    <td style="height: 50px;">Bottled Water</td>
-                    <td style="height: 50px;"">$1.25</td>
-                </tr>
-                <tr style="background-color:#b3c6ff;">
-                    <td style="height: 50px;"">Lemonade</td>
-                    <td style="height: 50px;">$1.00</td>
-                </tr>
-                <tr>
-                    <td style="height: 50px;">Iced Tea</td>
-                    <td sstyle="height: 50px;">$1.25</td>
-                </tr>
-            </table>
-        </div>
-
-
+            <div class="drinks">
+                <table>
+                    <th>Beverages</th>
+                    <tr class="gray">
+                        <td>Root Bear</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </table>
+            </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    <footer>
         <div class="footer">
-            <p>1111 Best To Eat Dr Louisville, Ky 40299</p>
-            <a href="tel:5028888888">502-888-8888</a>
+            <footer>
+                <p>1111 Hussle Dr Louisville, Ky 40299</p>
+                <p><a href="tel:5028888888">502-888-8888</a></p>
+            </footer>
         </div>
-    </footer>
+    </body>
 </html>
