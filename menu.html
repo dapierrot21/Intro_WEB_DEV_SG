@@ -9,7 +9,7 @@
             <link rel="stylesheet" href="css/restaurantStyles.css">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-
+            <script src="https://kit.fontawesome.com/a7d2ef447b.js"></script>
             <style>           
                 .menu {
                     display: flex;
@@ -63,7 +63,7 @@
         <div class="main-nav">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a href="homepage.html"><i class="fas fa-home"></i></a></li>
                     <li class="nav-item"><a href="menu.html">Menu</a></li>
                     <li class="nav-item"><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -71,6 +71,33 @@
         </div>
     </header>
     <body>
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <p>We're opening new locations!</p>
+                </div>
+                <div class="carousel-item">
+                <p>We're rolling out our seasonal menu <br/> with special options for this season.</p>
+                </div>
+                <div class="carousel-item">
+                <p>The Drink of the Month is SG Special Brew.</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         <div class="menu">
                 <div class="item">                  
                     <h2><strong>Burger and Fries</strong></h2>
